@@ -1,0 +1,33 @@
+{
+  "name": "eslint-config-codebox-base",
+  "version": "1.0.0",
+  "description": "A base (without React) ESLint config we use at CodeBox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asn007/eslint-config-codebox-base.git"
+  },
+  "keywords": [
+    "eslint-config",
+    "eslint",
+    "codebox"
+  ],
+  "author": "Andrey Sinitsyn <andrey.sin98@gmail.com> (https://andrey.space)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asn007/eslint-config-codebox-base/issues"
+  },
+  "homepage": "https://github.com/asn007/eslint-config-codebox-base#readme",
+  "dependencies": {
+    "eslint-config-airbnb-base": "^12.1.0"
+  },
+  "peerDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "prettier": "^1.9.2",
+    "babel-eslint": "^8.1.2"
+  }
+}
