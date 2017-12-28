@@ -19,6 +19,7 @@ module.exports = {
   plugins: [
     'prettier',
     'import',
+    'codebox',
   ],
   rules: {
     strict: 'off',
@@ -26,7 +27,7 @@ module.exports = {
     curly: ['error', 'multi'],
     quotes: ['error', 'single', {
       avoidEscape: true,
-      allowTemplateLiterals: true
+      allowTemplateLiterals: true,
     }],
     'no-underscore-dangle': 'off',
     'prettier/prettier': ['error', {
@@ -34,7 +35,43 @@ module.exports = {
       trailingComma: 'es5',
       jsxBracketSameLine: true,
       semi: false,
-      printWidth: 100
+      printWidth: 100,
     }],
+    'codebox/sort-named-imports': 'error',
+    'codebox/sort-imports': ['error', {
+      'importTypes': ['default', 'named', 'all', 'none'],
+      'groups': [
+        'builtin',
+        'external',
+        'parent',
+        'sibling',
+        'index',
+        ['unknown', 'absolute'],
+      ],
+      'ignoreCase': true,
+    }],
+    'import/no-unresolved': 'error',
+    'import/named': 'error',
+    'import/default': 'error',
+    'import/namespace': 'error',
+    'import/no-restricted-paths': 'error',
+    'import/no-absolute-path': 'error',
+    'import/no-webpack-loader-syntax': 'error',
+    'import/export': 'error',
+    'import/no-deprecated': 'error',
+    'import/no-mutable-exports': 'error',
+    'import/unambiguous': 'error',
+    'import/no-commonjs': 'error',
+    'import/no-amd': 'error',
+    'import/no-nodejs-modules': 'error',
+    'import/first': 'error',
+    'import/exports-last': 'error',
+    'import/no-duplicates': 'error',
+    'import/no-namespace': 'error',
+    'import/newline-after-import': ['error', { 'count': 1 }],
+    'import/prefer-default-export': 'error',
+    'import/no-unassigned-import': 'error',
+    'import/no-named-default': 'off',
+    'import/no-anonymous-default-export': 'error',
   }
 }
