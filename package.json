@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-codebox-base",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A base (without React) ESLint config we use at CodeBox",
   "main": "index.js",
   "scripts": {
